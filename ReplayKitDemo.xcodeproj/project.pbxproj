@@ -15,6 +15,8 @@
 		84342AFF2297918000C36314 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84342AFE2297918000C36314 /* main.m */; };
 		84342B092297918000C36314 /* ReplayKitDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84342B082297918000C36314 /* ReplayKitDemoTests.m */; };
 		84342B142297918000C36314 /* ReplayKitDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84342B132297918000C36314 /* ReplayKitDemoUITests.m */; };
+		84342B242297920200C36314 /* PhotoSaveLibraryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84342B232297920200C36314 /* PhotoSaveLibraryManager.m */; };
+		84342B2B2297943800C36314 /* ReplayKitManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84342B2A2297943800C36314 /* ReplayKitManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		84342B0F2297918000C36314 /* ReplayKitDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReplayKitDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84342B132297918000C36314 /* ReplayKitDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReplayKitDemoUITests.m; sourceTree = "<group>"; };
 		84342B152297918000C36314 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84342B222297920200C36314 /* PhotoSaveLibraryManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoSaveLibraryManager.h; sourceTree = "<group>"; };
+		84342B232297920200C36314 /* PhotoSaveLibraryManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoSaveLibraryManager.m; sourceTree = "<group>"; };
+		84342B292297943800C36314 /* ReplayKitManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReplayKitManager.h; sourceTree = "<group>"; };
+		84342B2A2297943800C36314 /* ReplayKitManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReplayKitManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,8 @@
 				84342AF02297917F00C36314 /* AppDelegate.m */,
 				84342AF22297917F00C36314 /* ViewController.h */,
 				84342AF32297917F00C36314 /* ViewController.m */,
+				84342B28229793FD00C36314 /* ReplayKit */,
+				84342B21229791AA00C36314 /* photos */,
 				84342AF52297917F00C36314 /* Main.storyboard */,
 				84342AF82297918000C36314 /* Assets.xcassets */,
 				84342AFA2297918000C36314 /* LaunchScreen.storyboard */,
@@ -130,6 +138,24 @@
 				84342B152297918000C36314 /* Info.plist */,
 			);
 			path = ReplayKitDemoUITests;
+			sourceTree = "<group>";
+		};
+		84342B21229791AA00C36314 /* photos */ = {
+			isa = PBXGroup;
+			children = (
+				84342B222297920200C36314 /* PhotoSaveLibraryManager.h */,
+				84342B232297920200C36314 /* PhotoSaveLibraryManager.m */,
+			);
+			path = photos;
+			sourceTree = "<group>";
+		};
+		84342B28229793FD00C36314 /* ReplayKit */ = {
+			isa = PBXGroup;
+			children = (
+				84342B292297943800C36314 /* ReplayKitManager.h */,
+				84342B2A2297943800C36314 /* ReplayKitManager.m */,
+			);
+			path = ReplayKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,6 +289,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				84342AF42297917F00C36314 /* ViewController.m in Sources */,
+				84342B242297920200C36314 /* PhotoSaveLibraryManager.m in Sources */,
+				84342B2B2297943800C36314 /* ReplayKitManager.m in Sources */,
 				84342AFF2297918000C36314 /* main.m in Sources */,
 				84342AF12297917F00C36314 /* AppDelegate.m in Sources */,
 			);
@@ -436,7 +464,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8F7D4C878S;
 				INFOPLIST_FILE = ReplayKitDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -452,7 +482,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8F7D4C878S;
 				INFOPLIST_FILE = ReplayKitDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
